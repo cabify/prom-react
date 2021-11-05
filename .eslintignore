@@ -1,0 +1,4 @@
+node_modules
+dist
+es2015
+*.d.ts

@@ -1,0 +1,71 @@
+{
+  "name": "@cabify/prom-react",
+  "description": "Add Prometheus metrics to your React App",
+  "version": "0.0.0",
+  "author": "Cabify",
+  "license": "Apache-2.0",
+  "main": "./dist/index.js",
+  "module": "./es2015/index.js",
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+  "repository": "cabify/prom-react",
+  "scripts": {
+    "clean": "rimraf dist/* es2015/*",
+    "build": "yarn run clean && cross-env BABEL_ENV=build package-build",
+    "build:watch": "cross-env BABEL_ENV=build package-build -w",
+    "format": "prettier --loglevel warn --write .",
+    "format:check": "prettier --check .",
+    "lint:check": "eslint . --ext ts,tsx,js",
+    "lint:fix": "eslint . --ext ts,tsx,js --fix",
+    "posttest": "yarn run lint && yarn run format && yarn run typecheck",
+    "prepublishOnly": "yarn run build",
+    "publish:major": "npm version major",
+    "publish:minor": "npm version minor",
+    "publish:patch": "npm version patch",
+    "publish:canary": "npm version prerelease",
+    "test": "jest",
+    "test:ci": "jest",
+    "typecheck": "tsc --project tsconfig.eslint.json"
+  },
+  "dependencies": {
+    "@shopify/network": "^2.0.2",
+    "@shopify/react-performance": "^2.1.2",
+    "events": "^3.3.0",
+    "promjs": "^0.4.1",
+    "react-beforeunload": "^2.5.1"
+  },
+  "devDependencies": {
+    "@cabify/babel-preset": "0.0.1",
+    "@cabify/eslint-config": "1.0.0",
+    "@cabify/package-build": "0.0.2",
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/user-event": "13.5.0",
+    "@types/jest": "27.0.2",
+    "@types/react": "17.0.33",
+    "@types/react-beforeunload": "2.1.1",
+    "@types/react-dom": "17.0.10",
+    "all-contributors-cli": "6.20.0",
+    "cross-env": "7.0.3",
+    "eslint": "8.1.0",
+    "eslint-import-resolver-typescript": "2.5.0",
+    "isomorphic-unfetch": "3.1.0",
+    "jest": "27.3.1",
+    "jest-environment-jsdom": "27.3.1",
+    "jest-environment-jsdom-global": "3.0.0",
+    "msw": "0.35.0",
+    "prettier": "2.4.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "rimraf": "3.0.2",
+    "typescript": "4.4.4"
+  },
+  "peerDependencies": {
+    "react": "> 16.8.0",
+    "react-dom": "> 16.8.0"
+  },
+  "volta": {
+    "node": "16.13.0",
+    "yarn": "1.22.17"
+  }
+}
