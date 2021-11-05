@@ -32,7 +32,7 @@
     "@shopify/react-performance": "^2.1.2",
     "events": "^3.3.0",
     "promjs": "^0.4.1",
-    "react-beforeunload": "^2.5.1"
+    "react-beforeunload": "^2.5.2"
   },
   "devDependencies": {
     "@cabify/babel-preset": "0.0.1",
