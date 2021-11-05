@@ -1611,10 +1611,10 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@shopify/network@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@shopify/network/-/network-2.0.2.tgz#d4d121c986b2fad596d69ebb8fb7d96e139bad81"
-  integrity sha512-7qIiLgVUwX9w+BqJ0aoRjm8MOSyO/ig3ikEZ9Mikd62tiEczXVYxqIPVtPePwOS8HhEwkKEhE0JBvVFTu3ywTg==
+"@shopify/network@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@shopify/network/-/network-2.0.4.tgz#11dd6f847b1df305de59e4a04bca1b53231d6cc1"
+  integrity sha512-s0hP54w05NXvpVX9ScmrpkCj2jsoYaWi9eLgQcF3olxU8bMIC8Ls6IuFiCFM+5pOlTYx16JIJMVc6R3VEb01mg==
 
 "@shopify/performance@^2.0.3":
   version "2.0.3"
