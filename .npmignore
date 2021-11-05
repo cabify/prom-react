@@ -1,0 +1,16 @@
+node_modules
+test
+yarn.lock
+src
+tsconfig.json
+tsconfig.eslint.json
+.editorconfig
+.eslintrc.js
+.eslintignore
+babel.config.js
+jest.config.js
+.prettierrc.json
+.prettierignore
+.renovaterc.json
+.gitlab-ci.yml
+images/
