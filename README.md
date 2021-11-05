@@ -1,7 +1,11 @@
 ## prom-react
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 Add Prometheus metrics to your React App. Built on top of promjs and react-performance libraries
 
 ### Scope and purpose
@@ -24,7 +28,7 @@ other alternatives might work as well.
 ### Installation
 
 ```sh
-$ yarn add @product/prom-react
+$ yarn add @cabify/prom-react
 ```
 
 ### Usage
@@ -36,7 +40,7 @@ your app, to make it widely available.
 
 ```tsx
 // src/index.tsx
-import { MetricsProvider } from '@product/prom-react';
+import { MetricsProvider } from '@cabify/prom-react';
 
 const normalizePath = (path: string) => {
   const match = path.match(/\/products\/(\d+)/);
@@ -71,7 +75,7 @@ for more info.
 
 ```tsx
 // src/pages/Products.tsx
-import { usePerformanceMark, Stage } from '@product/prom-react'; // handy re-export of @shopify/react-performance utils
+import { usePerformanceMark, Stage } from '@cabify/prom-react'; // handy re-export of @shopify/react-performance utils
 
 export const Products = () => {
   // whatever way to load the page data
@@ -125,7 +129,7 @@ Later on, you can take advantage of `useMetrics` hook to add observations on tho
 ```tsx
 // src/index.tsx
 
-import { MetricsProvider } from '@product/prom-react';
+import { MetricsProvider } from '@cabify/prom-react';
 
 // please remember to define them outside the component to avoid unneeded re-renders
 const customMetrics: MetricDefinition[] = [
@@ -145,7 +149,7 @@ const MyApp = () => {
 };
 
 // Any inner component
-import { useMetrics } from '@product/prom-react';
+import { useMetrics } from '@cabify/prom-react';
 
 const ReportsDownloadButton = () => {
   const { observe } = useMetrics();
@@ -206,7 +210,7 @@ Props:
 - `withLogger?: boolean`: If set to true, it will include a `MetricsLogger`. This way, you can have
   all debugging facilities at hand by only adding this component.
 
-![MetricsDebugOverlay component](./images/MetricsDebugOverlay.png)
+![MetricsDebugOverlay component](./images/MetricsDebugOverlay.png?raw=true 'MetricsDebugOverlay')
 
 Note that these debug components are very basic and may not fit your needs. However, as all metric data
 is available through `useMetrics` hook, you can build your own logger, debugging panel, etc. within
@@ -359,7 +363,7 @@ export const getNormalizedPath = (url: string) => {
 
 ```tsx
 // src/index.tsx
-import { MetricsProvider } from '@product/prom-react';
+import { MetricsProvider } from '@cabify/prom-react';
 
 const gatewayFetchOptions = {
   headers: {
