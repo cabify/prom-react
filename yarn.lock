@@ -1702,17 +1702,17 @@
   resolved "https://registry.yarnpkg.com/@shopify/network/-/network-2.0.6.tgz#0219acb88116499aa3f7768bb5909944aecebfe6"
   integrity sha512-CaFnAWIzrs96f0tOC5lPBqUSkHJ402XD1txiY5DRxg8BIpvuMHt6LWQ20XwIf/BaH1TONUrQUrbKrdfBpWNVCQ==
 
-"@shopify/performance@^2.0.10":
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/@shopify/performance/-/performance-2.0.10.tgz#2d00d8377f7a4852a7eed93c0a67641458b0a371"
-  integrity sha512-WYRtCkAhFl1Ols54qdo8RCyS1sv0r5l1haosLq3ib6iVJ19SAUBI6KpHVr2/Ny7qVUMyGlvM8sbDdDX1O0Nj2A==
+"@shopify/performance@^2.0.12":
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/@shopify/performance/-/performance-2.0.12.tgz#57b1f649275956acafaa761747c7d7ef992d440e"
+  integrity sha512-sZXalc1N8y962l8NhP1q9lPZtPlPY5hlzvif3rxzl9lPQmQVGEn2OMnJbEWludUfVDcB9ZcJDkJEJLW3jUcVGA==
 
 "@shopify/react-performance@^2.1.2":
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/@shopify/react-performance/-/react-performance-2.1.10.tgz#14db8eb114958903b8e05fa822627d14493f2275"
-  integrity sha512-6tWCSoHVAzEYa8K8ugbjBVqEuzv7Xwv6d/vMdmLZomLP+Q4H6gbFo8IOVeKZ2jG3jqOVq47wkjMfex29n3H2Hw==
+  version "2.1.12"
+  resolved "https://registry.yarnpkg.com/@shopify/react-performance/-/react-performance-2.1.12.tgz#ade28bfcfc390195a1ba133297a80169e0460ea3"
+  integrity sha512-Ir0cvqxLA+WFqtRRD4sEaEs0gMIcSa++RDxC1Pj5x+SF4vfO8ZWUtxQI0coDU4leIvYERvW0Bfn005knGq1phQ==
   dependencies:
-    "@shopify/performance" "^2.0.10"
+    "@shopify/performance" "^2.0.12"
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
