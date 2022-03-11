@@ -15,7 +15,7 @@
     "build:watch": "cross-env BABEL_ENV=build package-build -w",
     "format": "prettier --loglevel warn --write .",
     "format:check": "prettier --check .",
-    "lint:check": "eslint . --ext ts,tsx,js",
+    "lint": "eslint . --ext ts,tsx,js",
     "lint:fix": "eslint . --ext ts,tsx,js --fix",
     "posttest": "yarn run lint && yarn run format && yarn run typecheck",
     "prepublishOnly": "yarn run build",
