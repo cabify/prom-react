@@ -1698,9 +1698,9 @@
     picomatch "^2.2.2"
 
 "@shopify/network@^2.0.4":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@shopify/network/-/network-2.0.7.tgz#05fd74d3f3c7d3a24fa2d3361c5557c8a5ec8b3c"
-  integrity sha512-/KsiJUexKnYNJ+HYtpYp6hzjVJnQIGBa6oXr/b5AhW+yDZxJww4NwPU4wjEshDrqh5hb3i1iPgynOPeAu0kniQ==
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/@shopify/network/-/network-2.0.8.tgz#fc2c7f78f31428130e5facb09135dc7bea0af289"
+  integrity sha512-SLImF7JPACYFepqOAZ7ORlVMmDhp90KlYJY2BWPiUge2+4IjTCU0QvJWEaeV/PdUQ1PurLZNuRIUEkjpEH23dA==
 
 "@shopify/performance@^2.0.13":
   version "2.0.13"
