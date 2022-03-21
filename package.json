@@ -42,7 +42,7 @@
     "@testing-library/react": "12.1.4",
     "@testing-library/user-event": "13.5.0",
     "@types/jest": "27.4.1",
-    "@types/react": "17.0.40",
+    "@types/react": "17.0.41",
     "@types/react-beforeunload": "2.1.1",
     "@types/react-dom": "17.0.13",
     "all-contributors-cli": "6.20.0",
