@@ -29,4 +29,5 @@ jobs:
       - run: yarn install
       - uses: JS-DevTools/npm-publish@v1
         with:
+          tag: beta
           token: ${{ secrets.NPM_TOKEN }}
