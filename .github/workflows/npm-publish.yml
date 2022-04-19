@@ -5,19 +5,18 @@ name: Publish package
 
 on:
   workflow_run:
-    workflows: ['Tests']
-    branches: [main]
+    branches:
+      - main
+    workflows:
+      - Tests
     types:
       - completed
   push:
-    branches:
-      - 'main'
     tags:
       - 'v*'
 
 jobs:
   publish-npm:
-    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

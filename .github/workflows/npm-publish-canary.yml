@@ -7,18 +7,16 @@ on:
   workflow_run:
     branches:
       - '!main'
-    workflows: ['Tests']
+    workflows:
+      - Tests
     types:
       - completed
   push:
-    branches:
-      - '*'
     tags:
       - 'v**-**'
 
 jobs:
   publish-canary-npm:
-    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
