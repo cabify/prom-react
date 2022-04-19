@@ -5,10 +5,9 @@ name: Publish canary package
 
 on:
   workflow_run:
-    branches:
-      - '!main'
-    workflows:
-      - Tests
+    branches-ignore:
+      - 'main'
+    workflows: ["Tests"]
     types:
       - completed
   push:
