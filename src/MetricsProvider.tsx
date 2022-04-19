@@ -4,7 +4,14 @@ import {
 } from '@shopify/react-performance';
 import EventEmitter from 'events';
 import prom from 'promjs';
-import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import {
+  PropsWithChildren,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import { useBeforeunload } from 'react-beforeunload';
 
 import { ObserveCallback } from '.';
@@ -83,7 +90,7 @@ export interface MetricsProviderProps {
 
 const defaultBuckets = [0.01, 0.1, 1, 2, 3, 4, 5, 7, 10, 15];
 
-const MetricsProvider: FC<MetricsProviderProps> = ({
+const MetricsProvider = ({
   appName,
   children,
   metricsAggregatorUrl,
@@ -92,7 +99,7 @@ const MetricsProvider: FC<MetricsProviderProps> = ({
   histogramBuckets = defaultBuckets,
   customMetrics = [],
   fetchOptions,
-}) => {
+}: PropsWithChildren<MetricsProviderProps>) => {
   const [isReady, setIsReady] = useState(false);
   const [navigationData, setNavigationData] = useState<NavigationData | null>(
     null,
@@ -119,7 +126,7 @@ const MetricsProvider: FC<MetricsProviderProps> = ({
         registry.current,
         metricsAggregatorUrl,
         fetchOptions,
-        isAppUnloading as boolean,
+        isAppUnloading,
       );
     },
     [metricsAggregatorUrl, fetchOptions],

@@ -1,4 +1,4 @@
-import { CSSProperties, FC } from 'react';
+import { CSSProperties } from 'react';
 
 import { useMetrics } from './MetricsContext';
 import { MetricsLogger } from './MetricsLogger';
@@ -42,10 +42,10 @@ const valueStyle: CSSProperties = {
   color: '#9bf6ff',
 };
 
-const MetricsDebugOverlay: FC<MetricsDebugOverlayProps> = ({
+const MetricsDebugOverlay = ({
   withLogger,
   onClose,
-}) => {
+}: MetricsDebugOverlayProps) => {
   const { navigationData } = useMetrics();
 
   return (
