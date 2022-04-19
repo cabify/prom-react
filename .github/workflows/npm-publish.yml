@@ -7,7 +7,7 @@ on:
   workflow_run:
     branches:
       - 'main'
-    workflows: ["Tests"]
+    workflows: ['Tests']
     types:
       - completed
   push:
