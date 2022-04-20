@@ -22,7 +22,7 @@
     "publish:major": "npm version major",
     "publish:minor": "npm version minor",
     "publish:patch": "npm version patch",
-    "publish:canary": "npm version prerelease",
+    "publish:canary": "npm version prerelease --preid=beta",
     "test": "jest",
     "test:ci": "jest",
     "typecheck": "tsc --project tsconfig.eslint.json"
