@@ -27,6 +27,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "valenber",
+      "name": "Valentin Berlin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7880641?v=4",
+      "profile": "https://valya.codes/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
