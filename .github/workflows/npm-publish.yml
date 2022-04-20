@@ -19,5 +19,5 @@ jobs:
       - run: yarn install
       - uses: JS-DevTools/npm-publish@v1
         with:
-          tag:    ${{ contains(github.ref_name,'beta') && 'beta' || 'latest' }}
-          token:  ${{ secrets.NPM_TOKEN }}
+          tag: ${{ contains(github.ref_name,'beta') && 'beta' || 'latest' }}
+          token: ${{ secrets.NPM_TOKEN }}
