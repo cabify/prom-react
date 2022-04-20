@@ -4,20 +4,11 @@
 name: Publish package
 
 on:
-  workflow_run:
-    workflows: ['Tests']
-    branches: [main]
-    types:
-      - completed
-  push:
-    branches:
-      - '!*'
-    tags:
-      - 'v*'
+  release:
+    types: [created]
 
 jobs:
   publish-npm:
-    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -28,4 +19,5 @@ jobs:
       - run: yarn install
       - uses: JS-DevTools/npm-publish@v1
         with:
+          tag: ${{ contains(github.ref_name,'beta') && 'beta' || 'latest' }}
           token: ${{ secrets.NPM_TOKEN }}
