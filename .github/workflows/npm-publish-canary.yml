@@ -4,12 +4,12 @@
 name: Publish canary package
 
 on:
-  push:
-    tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+-beta.[0-9]+$'
+  release:
+    types: [created]
 
 jobs:
   publish-canary-npm:
+    if: contains(github.ref_name,'beta')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
