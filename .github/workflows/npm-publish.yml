@@ -9,7 +9,6 @@ on:
 
 jobs:
   publish-npm:
-    if: contains(github.ref_name,'beta') == false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,4 +19,5 @@ jobs:
       - run: yarn install
       - uses: JS-DevTools/npm-publish@v1
         with:
-          token: ${{ secrets.NPM_TOKEN }}
+          tag:    ${{ contains(github.ref_name,'beta') && 'beta' || 'latest' }}
+          token:  ${{ secrets.NPM_TOKEN }}
