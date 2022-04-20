@@ -1,7 +1,7 @@
 ## prom-react
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Add Prometheus metrics to your React App. Built on top of promjs and react-performance libraries
@@ -443,6 +443,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://leireriel.github.io/leire-rico-portfolio/#/"><img src="https://avatars.githubusercontent.com/u/48056077?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Leire Rico</b></sub></a><br /><a href="https://github.com/cabify/prom-react/commits?author=leireriel" title="Code">💻</a></td>
     <td align="center"><a href="http://www.siete3.com/"><img src="https://avatars.githubusercontent.com/u/2030605?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rodrigo</b></sub></a><br /><a href="https://github.com/cabify/prom-react/commits?author=area73" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/AlexTemina"><img src="https://avatars.githubusercontent.com/u/14157093?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alex Temina</b></sub></a><br /><a href="https://github.com/cabify/prom-react/commits?author=AlexTemina" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/fernandezAmor"><img src="https://avatars.githubusercontent.com/u/6586552?v=4?s=100" width="100px;" alt=""/><br /><sub><b>fernandezAmor</b></sub></a><br /><a href="https://github.com/cabify/prom-react/commits?author=fernandezAmor" title="Code">💻</a></td>
   </tr>
 </table>
 
