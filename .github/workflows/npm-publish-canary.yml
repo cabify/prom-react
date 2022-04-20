@@ -4,17 +4,9 @@
 name: Publish canary package
 
 on:
-  workflow_run:
-    workflows: ['Tests']
-    types:
-      - completed
-    branches-ignore:
-      - 'main'
   push:
-    branches:
-      - '!main'
     tags:
-      - 'v**-**'
+      - 'v[0-9]+.[0-9]+.[0-9]+-beta.[0-9]+$'
 
 jobs:
   publish-canary-npm:
