@@ -28,21 +28,21 @@
     "typecheck": "tsc --project tsconfig.eslint.json"
   },
   "dependencies": {
-    "@shopify/network": "^2.0.4",
-    "@shopify/react-performance": "^2.1.2",
+    "@shopify/network": "^2.0.8",
+    "@shopify/react-performance": "^2.1.14",
     "events": "^3.3.0",
     "promjs": "^0.4.1",
-    "react-beforeunload": "^2.5.2"
+    "react-beforeunload": "^2.5.3"
   },
   "devDependencies": {
     "@cabify/babel-preset": "0.0.2",
     "@cabify/eslint-config": "1.0.2",
     "@cabify/package-build": "0.0.2",
     "@testing-library/jest-dom": "5.16.4",
-    "@testing-library/react": "12.1.5",
+    "@testing-library/react": "13.1.1",
     "@testing-library/user-event": "14.1.1",
     "@types/jest": "27.4.1",
-    "@types/react": "17.0.43",
+    "@types/react": "18.0.5",
     "@types/react-beforeunload": "2.1.1",
     "@types/react-dom": "18.0.1",
     "all-contributors-cli": "6.20.0",
@@ -55,8 +55,8 @@
     "jest-environment-jsdom-global": "3.0.0",
     "msw": "0.39.2",
     "prettier": "2.6.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
     "rimraf": "3.0.2",
     "typescript": "4.6.3"
   },
@@ -64,8 +64,8 @@
     "access": "public"
   },
   "peerDependencies": {
-    "react": "> 16.8.0",
-    "react-dom": "> 16.8.0"
+    "react": "> 18.0.0",
+    "react-dom": "> 18.0.0"
   },
   "volta": {
     "node": "16.13.0",
