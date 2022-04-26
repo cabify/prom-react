@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Fixed `peerDependencies` for `react` and `react` DOM to allow versions up from `16.9`.
+
 ## [0.2.0] - 2022-04-21
 
 - Update to React 18.0.0
