@@ -2,7 +2,10 @@ const path = require('path');
 
 module.exports = {
   rootDir: path.resolve('./'),
-  testEnvironment: 'jest-environment-jsdom-global',
+  testEnvironment: 'jest-environment-jsdom',
+  testEnvironmentOptions: {
+    url: 'http://localhost/',
+  },
   moduleNameMapper: {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       '<rootDir>/test/fileMock.js',
@@ -16,5 +19,4 @@ module.exports = {
   coverageReporters: ['text'],
   coveragePathIgnorePatterns: ['/node_modules/', '/test/'],
   setupFilesAfterEnv: ['<rootDir>/test/setupTests.ts'],
-  testURL: 'http://localhost/',
 };
