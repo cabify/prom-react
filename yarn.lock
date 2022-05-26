@@ -1857,10 +1857,10 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@shopify/network@^2.0.8":
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/@shopify/network/-/network-2.0.8.tgz#fc2c7f78f31428130e5facb09135dc7bea0af289"
-  integrity sha512-SLImF7JPACYFepqOAZ7ORlVMmDhp90KlYJY2BWPiUge2+4IjTCU0QvJWEaeV/PdUQ1PurLZNuRIUEkjpEH23dA==
+"@shopify/network@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@shopify/network/-/network-3.0.0.tgz#582446b88cc8fd482947bd77f9e1ff3e0e9f5882"
+  integrity sha512-WzQIPcGcJ9W6kqQfvbC/+ciTydnX1KVtnk1k3EFkZkzUXLlQUMkbAmilxFXjtxEeJOIzIM7KZ4Isc1KUtbkH6Q==
 
 "@shopify/performance@^2.0.14":
   version "2.0.14"
