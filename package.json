@@ -1,7 +1,7 @@
 {
   "name": "@cabify/prom-react",
   "description": "Add Prometheus metrics to your React App",
-  "version": "0.2.1-beta.2",
+  "version": "0.2.1",
   "author": "Cabify",
   "license": "Apache-2.0",
   "main": "./dist/index.js",
