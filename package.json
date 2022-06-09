@@ -28,8 +28,8 @@
     "typecheck": "tsc --project tsconfig.eslint.json"
   },
   "dependencies": {
-    "@shopify/network": "^2.0.8",
-    "@shopify/react-performance": "2.1.14-react-18-react-testing-beta.0",
+    "@shopify/network": "^3.0.0",
+    "@shopify/react-performance": "^3.0.1",
     "events": "^3.3.0",
     "promjs": "^0.4.1",
     "react-beforeunload": "^2.5.3"
@@ -39,25 +39,25 @@
     "@cabify/eslint-config": "1.0.2",
     "@cabify/package-build": "0.0.2",
     "@testing-library/jest-dom": "5.16.4",
-    "@testing-library/react": "13.1.1",
-    "@testing-library/user-event": "14.1.1",
-    "@types/jest": "27.4.1",
-    "@types/react": "18.0.8",
+    "@testing-library/react": "13.3.0",
+    "@testing-library/user-event": "14.2.0",
+    "@types/jest": "27.5.1",
+    "@types/react": "18.0.12",
     "@types/react-beforeunload": "2.1.1",
-    "@types/react-dom": "18.0.3",
+    "@types/react-dom": "18.0.5",
     "all-contributors-cli": "6.20.0",
     "cross-env": "7.0.3",
-    "eslint": "8.14.0",
+    "eslint": "8.17.0",
     "eslint-import-resolver-typescript": "2.7.1",
     "isomorphic-unfetch": "3.1.0",
-    "jest": "28.0.3",
-    "jest-environment-jsdom": "28.0.2",
-    "msw": "0.39.2",
+    "jest": "28.1.0",
+    "jest-environment-jsdom": "28.1.0",
+    "msw": "0.42.0",
     "prettier": "2.6.2",
     "react": "18.1.0",
-    "react-dom": "18.0.0",
+    "react-dom": "18.1.0",
     "rimraf": "3.0.2",
-    "typescript": "4.6.4"
+    "typescript": "4.7.3"
   },
   "publishConfig": {
     "access": "public"
