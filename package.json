@@ -1,7 +1,7 @@
 {
   "name": "@cabify/prom-react",
   "description": "Add Prometheus metrics to your React App",
-  "version": "0.2.0",
+  "version": "0.2.1-beta.2",
   "author": "Cabify",
   "license": "Apache-2.0",
   "main": "./dist/index.js",
@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@shopify/network": "^3.0.0",
-    "@shopify/react-performance": "^3.0.0",
+    "@shopify/react-performance": "^3.0.1",
     "events": "^3.3.0",
     "promjs": "^0.4.1",
     "react-beforeunload": "^2.5.3"
@@ -63,8 +63,8 @@
     "access": "public"
   },
   "peerDependencies": {
-    "react": "> 18.0.0",
-    "react-dom": "> 18.0.0"
+    "react": ">=16.8.0 < 19.0.0",
+    "react-dom": ">=16.8.0 < 19.0.0"
   },
   "volta": {
     "node": "16.13.0",

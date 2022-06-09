@@ -1867,10 +1867,10 @@
   resolved "https://registry.yarnpkg.com/@shopify/performance/-/performance-3.0.0.tgz#e2b92c8618756b308628d75564b97f99d8fb5227"
   integrity sha512-0Zsxp3YlsuluFt+sIoaT3mAvcQSx5Wmn1J+TJK+u/b1SOPFW1VslSvP79PaNhGqktUeZhyfCpc4OfH1rgvjaqw==
 
-"@shopify/react-performance@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@shopify/react-performance/-/react-performance-3.0.0.tgz#b1c81b3f045e1086e3576b2bbbeb38f581562b07"
-  integrity sha512-NK6oR5EqgHhNfZ55R5BOk9tearREI2b2J3gOwaV/HXKfxZncPmiA0FGPcETwwGtpFXzXZUWWnFqoOsXWEZlqtw==
+"@shopify/react-performance@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@shopify/react-performance/-/react-performance-3.0.1.tgz#3df9a4cdc635c6d0d1770ba2a4c430da40887917"
+  integrity sha512-mkieC7AfjdMIrleINbKAvIjVwhlkWzU1ran3Bs9c7fk/dqwdpPkg0V93kfLfD7fmuXtxDwq7hmbRwO2wFecdXg==
   dependencies:
     "@shopify/performance" "^3.0.0"
 
