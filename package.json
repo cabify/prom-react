@@ -53,7 +53,7 @@
     "jest": "28.1.0",
     "jest-environment-jsdom": "28.1.1",
     "msw": "0.42.1",
-    "prettier": "2.6.2",
+    "prettier": "2.7.1",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "rimraf": "3.0.2",
