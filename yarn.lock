@@ -1859,9 +1859,9 @@
     picomatch "^2.2.2"
 
 "@shopify/network@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@shopify/network/-/network-3.0.0.tgz#582446b88cc8fd482947bd77f9e1ff3e0e9f5882"
-  integrity sha512-WzQIPcGcJ9W6kqQfvbC/+ciTydnX1KVtnk1k3EFkZkzUXLlQUMkbAmilxFXjtxEeJOIzIM7KZ4Isc1KUtbkH6Q==
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@shopify/network/-/network-3.1.0.tgz#9e6f48fa9ccfcea86d7f86a85c58a81128c3baa2"
+  integrity sha512-48VNfK1c+E+oaZIickXt9EzlxMq0/rH6RIs6Devnw73vkUybOij8Qbh73G1BNqW/1oOwnFbx8vKHXBs0wt8k3Q==
 
 "@shopify/performance@^3.0.0":
   version "3.0.0"
