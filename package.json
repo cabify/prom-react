@@ -51,7 +51,7 @@
     "eslint-import-resolver-typescript": "3.1.1",
     "isomorphic-unfetch": "3.1.0",
     "jest": "28.1.1",
-    "jest-environment-jsdom": "28.1.1",
+    "jest-environment-jsdom": "28.1.2",
     "msw": "0.42.1",
     "prettier": "2.7.1",
     "react": "18.1.0",
