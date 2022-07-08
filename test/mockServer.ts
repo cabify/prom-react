@@ -5,11 +5,11 @@ export const server = setupServer(
   rest.post(
     'http://push-aggregation-gateway/push-metrics',
     (_req, res, ctx) => {
-      return res(ctx.status(200));
+      return res(ctx.delay(), ctx.status(200));
     },
   ),
   rest.post('http://push-aggregation-gateway/server-down', (_req, res, ctx) => {
-    return res(ctx.status(503));
+    return res(ctx.delay(), ctx.status(503));
   }),
 );
 
