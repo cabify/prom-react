@@ -38,7 +38,7 @@
     "@cabify/babel-preset": "0.0.2",
     "@cabify/eslint-config": "1.0.3",
     "@cabify/package-build": "0.0.2",
-    "@testing-library/jest-dom": "5.16.4",
+    "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.3.0",
     "@testing-library/user-event": "14.3.0",
     "@types/jest": "28.1.6",
