@@ -2,20 +2,20 @@ import { FC, useEffect } from 'react';
 
 import { ObserveCallback, useMetrics } from './MetricsContext';
 
-const handleObserve: ObserveCallback = ({ metricName, value, tags }) => {
+const defaultLogger: ObserveCallback = ({ metricName, value, tags }) => {
   // eslint-disable-next-line no-console
   console.log('[prom_react]', metricName, value, tags);
 };
 
-const MetricsLogger: FC = () => {
+const MetricsLogger: FC<{ logger?: ObserveCallback }> = ({ logger = defaultLogger }) => {
   const { addObserveListener, removeObserveListener } = useMetrics();
 
   useEffect(() => {
-    addObserveListener(handleObserve);
+    addObserveListener(logger);
     return () => {
-      removeObserveListener(handleObserve);
+      removeObserveListener(logger);
     };
-  }, [addObserveListener, removeObserveListener]);
+  }, [addObserveListener, logger, removeObserveListener]);
 
   return null;
 };

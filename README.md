@@ -198,6 +198,10 @@ to your package dependencies. You can have a look at its
 React component that will log into console all metric observations. It won't render anything in the screen.
 You should not add this in production.
 
+Props:
+
+- `logger?: ObserveCallback`: If set, it will replace the original logger.
+
 #### MetricsDebugOverlay
 
 React component to show metrics debug info. Must be placed under `MetricsProvider`. It shows a not-so-fancy
@@ -267,6 +271,26 @@ const AppRoot = () => (
 This will produce log entries like this:
 
 `[prom_react] prom_react_navigation_duration_seconds 1.2456 {app_name: 'my_app', path: '/app', navigation_type: 'full_page' }`
+
+You can customize the output for `MetricsLogger` by replacing the original loader:
+
+```tsx
+const AppRoot = () => (
+  <MetricsProvider
+    appName="my-app-name"
+    owner="my-team"
+    getNormalizedPath={normalizePath}
+    metricsAggregatorUrl="https://some-metrics-aggregator.com/push-metrics"
+  >
+    <MetricsLogger
+      logger={({ metricName, value, tags }) => {
+        console.debug('Custom log for prom-react!', metricName, value, tags);
+      }}
+    />
+    <MyApp />
+  </MetricsProvider>
+);
+```
 
 Moreover, you can also add a widget that will show last navigation event being triggered. This is particularly useful to check
 if all your pages are properly instrumented (you should navigate across your app and the widget should show the right path after
