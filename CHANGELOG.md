@@ -11,14 +11,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - New optional prop for `MetricsLogger` called `logger` to set a different logger.
 
-   Usage:
-   ```tsx
-   <MetricsLogger
-     logger={({ metricName, value, tags }) => {
-       console.debug('Custom log for prom-react!', metricName, value, tags);
-     }}
-   />;
-   ```
+  Usage:
+
+  ```tsx
+  <MetricsLogger
+    logger={({ metricName, value, tags }) => {
+      console.debug('Custom log for prom-react!', metricName, value, tags);
+    }}
+  />
+  ```
 
 ## [0.2.1] - 2022-06-09
 

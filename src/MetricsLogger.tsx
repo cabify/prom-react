@@ -7,7 +7,9 @@ const defaultLogger: ObserveCallback = ({ metricName, value, tags }) => {
   console.log('[prom_react]', metricName, value, tags);
 };
 
-const MetricsLogger: FC<{ logger?: ObserveCallback }> = ({ logger = defaultLogger }) => {
+const MetricsLogger: FC<{ logger?: ObserveCallback }> = ({
+  logger = defaultLogger,
+}) => {
   const { addObserveListener, removeObserveListener } = useMetrics();
 
   useEffect(() => {
