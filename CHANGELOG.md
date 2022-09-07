@@ -7,9 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- New optional prop for `MetricsLogger` called `logger` to set a different logger.
+
+  Usage:
+
+  ```tsx
+  const metricsLogger = useMemo(
+    () =>
+      ({ metricName, value, tags }) => {
+        console.debug('Custom log for prom-react!', metricName, value, tags);
+      },
+    [],
+  );
+
+  return <MetricsLogger logger={metricsLogger} />;
+  ```
+
 ## [0.2.1] - 2022-06-09
 
-- Fixed `peerDependencies` for `react` and `react` DOM to allow versions up from `16.9`.
+### Fixed
+
+- `peerDependencies` for `react` and `react` DOM to allow versions up from `16.9`.
 
 ## [0.2.0] - 2022-04-21
 
@@ -19,11 +39,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Update some inner dependencies
+- Update some inner dependencies.
 
 ## [0.1.0] - 2021-11-05
 
 ### Added
 
-- Initial version of the library. It includes both `MetricsProvider` and
-  `useMetrics`. See [README](./README.md) for more details
+- Initial version of the library. It includes both `MetricsProvider` and `useMetrics`. See [README](./README.md) for more details.
