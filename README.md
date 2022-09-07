@@ -200,7 +200,7 @@ You should not add this in production.
 
 Props:
 
-- `logger?: ObserveCallback`: If set, it will replace the original logger.
+- `logger?: ObserveCallback`: If set, it will replace the original logger. Ensure the reference of this value doesn't change between renders by memoizing the logger function or defining it outside the component to avoid performance issues.
 
 #### MetricsDebugOverlay
 
@@ -275,6 +275,9 @@ This will produce log entries like this:
 You can customize the output for `MetricsLogger` by replacing the original loader:
 
 ```tsx
+const metricsLogger = ({ metricName, value, tags }) => {
+  console.debug('Custom log for prom-react!', metricName, value, tags);
+};
 const AppRoot = () => (
   <MetricsProvider
     appName="my-app-name"
@@ -282,11 +285,7 @@ const AppRoot = () => (
     getNormalizedPath={normalizePath}
     metricsAggregatorUrl="https://some-metrics-aggregator.com/push-metrics"
   >
-    <MetricsLogger
-      logger={({ metricName, value, tags }) => {
-        console.debug('Custom log for prom-react!', metricName, value, tags);
-      }}
-    />
+    <MetricsLogger logger={metricsLogger} />
     <MyApp />
   </MetricsProvider>
 );

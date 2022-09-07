@@ -14,11 +14,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Usage:
 
   ```tsx
-  <MetricsLogger
-    logger={({ metricName, value, tags }) => {
-      console.debug('Custom log for prom-react!', metricName, value, tags);
-    }}
-  />
+  const metricsLogger = useMemo(
+    () =>
+      ({ metricName, value, tags }) => {
+        console.debug('Custom log for prom-react!', metricName, value, tags);
+      },
+    [],
+  );
+
+  return <MetricsLogger logger={metricsLogger} />;
   ```
 
 ## [0.2.1] - 2022-06-09
