@@ -89,6 +89,7 @@ export interface MetricsProviderProps {
 }
 
 const defaultBuckets = [0.01, 0.1, 1, 2, 3, 4, 5, 7, 10, 15];
+const defaultCustomMetrics: MetricDefinition[] = [];
 
 const MetricsProvider = ({
   appName,
@@ -97,7 +98,7 @@ const MetricsProvider = ({
   getNormalizedPath,
   owner = '',
   histogramBuckets = defaultBuckets,
-  customMetrics = [],
+  customMetrics = defaultCustomMetrics,
   fetchOptions,
 }: PropsWithChildren<MetricsProviderProps>) => {
   const [isReady, setIsReady] = useState(false);
