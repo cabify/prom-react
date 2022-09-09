@@ -4932,7 +4932,7 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
-lodash@^4, lodash@^4.11.2, lodash@^4.17.10, lodash@^4.17.12, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.21:
+lodash@^4, lodash@^4.11.2, lodash@^4.17.10, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -5473,11 +5473,9 @@ pretty-format@^29.0.0, pretty-format@^29.0.2:
     react-is "^18.0.0"
 
 promjs@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/promjs/-/promjs-0.4.1.tgz#03bef4c5030135719c376844a18a0057f65892fa"
-  integrity sha512-u89DY6Dy3j3eOehID3DDtr2O9TKf6cpeppDYypbfqkQr/fw87+KGcchzYuvr/hBOZqDrikwICxuVH1JC0fm5VQ==
-  dependencies:
-    lodash "^4.17.12"
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/promjs/-/promjs-0.4.2.tgz#9c2b4a60e00c1a0ecb69a3c1c322d1cfb47a300d"
+  integrity sha512-qvHcTU9xwEieFOf2Qnf5JYPKkdJU2lRbJfJvJspw6XpnoH7VPmNfnJJnOLPfN8ODJMBLRt8wEPVjxyyn0Or6RQ==
 
 prompts@^2.0.1:
   version "2.4.1"
