@@ -44,7 +44,7 @@
     "@types/jest": "29.2.0",
     "@types/react": "18.0.24",
     "@types/react-beforeunload": "2.1.1",
-    "@types/react-dom": "18.0.7",
+    "@types/react-dom": "18.0.8",
     "all-contributors-cli": "6.24.0",
     "cross-env": "7.0.3",
     "eslint": "8.26.0",
