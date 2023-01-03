@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-import 'isomorphic-unfetch';
+import 'unfetch/polyfill';
 
 import { server } from './mockServer';
 
