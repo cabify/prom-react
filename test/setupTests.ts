@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-import 'unfetch/polyfill';
+import 'whatwg-fetch';
 
 import { server } from './mockServer';
 
