@@ -2004,10 +2004,10 @@
   dependencies:
     web-vitals "^3.0.4"
 
-"@shopify/react-performance@^3.0.9":
-  version "3.0.9"
-  resolved "https://registry.yarnpkg.com/@shopify/react-performance/-/react-performance-3.0.9.tgz#72eabea3322d730b612f42927d904bfe9af03e27"
-  integrity sha512-p+spa404YLfbbZQt+LvnsnCgTNxpO5LGniv5fQ4g7SEItcN/uhF1laYd2Tyb3XfU9meHzqaUJkmGGZIdctd3cA==
+"@shopify/react-performance@^3.0.10":
+  version "3.0.10"
+  resolved "https://registry.yarnpkg.com/@shopify/react-performance/-/react-performance-3.0.10.tgz#24e046cec18e0560763050514c1dd363091743bb"
+  integrity sha512-VGt6zZE5WMehaPkE84IUjGsuRAvTl0KlY92DFZyx4W+HUuOBbOw7ICWWEfovxGmUphWA8yrWn3LYbPHjc5Tjig==
   dependencies:
     "@shopify/performance" "^3.2.2"
 
