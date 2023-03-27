@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@shopify/network": "^3.0.0",
-    "@shopify/react-performance": "^3.0.9",
+    "@shopify/react-performance": "^3.0.12",
     "events": "^3.3.0",
     "promjs": "^0.4.1",
     "react-beforeunload": "^2.5.3"
