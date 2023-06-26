@@ -1538,10 +1538,10 @@
     eslint-plugin-react-hooks "^4.3.0"
     eslint-plugin-simple-import-sort "^10.0.0"
 
-"@cabify/package-build@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@cabify/package-build/-/package-build-0.1.1.tgz#961a63ec4faad85e7e1ae776e92679ddc806431f"
-  integrity sha512-dD9zJLoBuOWUAuYWdHcmlO7e3L8lwbJwcdk+HAetksOx0bhB4DNCBoXHyYYzVZQAPks+xALLNQKGvjRuwg4b5g==
+"@cabify/package-build@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@cabify/package-build/-/package-build-0.1.2.tgz#bd65ad4cff7f8aeb4b976f5a54ae9b5bde6f3fcd"
+  integrity sha512-3XbqaZ5Qj5Pjvvwb31ET61KiGRyqFXUZY2bOBHZ3nuYNio9LLIvfjMTaU57bIlgYp+tefFLbRRZbJJIa8dybJQ==
   dependencies:
     "@rollup/plugin-babel" "^6.0.3"
     "@rollup/plugin-commonjs" "^24.0.1"
@@ -1549,9 +1549,9 @@
     "@rollup/plugin-json" "^6.0.0"
     "@rollup/plugin-node-resolve" "^15.0.1"
     cross-spawn "^7.0.3"
-    minimist "^1.2.7"
+    minimist "^1.2.8"
     node-typescript-compiler "^3.0.0"
-    rollup "^3.12.0"
+    rollup "^3.20.2"
     rollup-plugin-command "^1.1.3"
     rollup-plugin-ignore-import "^1.3.2"
     rollup-pluginutils "^2.8.2"
@@ -5358,10 +5358,10 @@ minimatch@^9.0.1:
   dependencies:
     brace-expansion "^2.0.1"
 
-minimist@^1.2.0, minimist@^1.2.6, minimist@^1.2.7:
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.7.tgz#daa1c4d91f507390437c6a8bc01078e7000c4d18"
-  integrity sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==
+minimist@^1.2.0, minimist@^1.2.6, minimist@^1.2.8:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.8.tgz#c1a464e7693302e082a075cee0c057741ac4772c"
+  integrity sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==
 
 "minipass@^5.0.0 || ^6.0.2":
   version "6.0.2"
@@ -6097,10 +6097,10 @@ rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^3.12.0:
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.14.0.tgz#f5925255f3b6e8de1dba3916d7619c7da5708d95"
-  integrity sha512-o23sdgCLcLSe3zIplT9nQ1+r97okuaiR+vmAPZPTDYB7/f3tgWIYNyiQveMsZwshBT0is4eGax/HH83Q7CG+/Q==
+rollup@^3.20.2:
+  version "3.25.2"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.25.2.tgz#3479d72955a83da9019f926d4ba285d630b7656b"
+  integrity sha512-VLnkxZMDr3jpxgtmS8pQZ0UvhslmF4ADq/9w4erkctbgjCqLW9oa89fJuXEs4ZmgyoF7Dm8rMDKSS5b5u2hHUg==
   optionalDependencies:
     fsevents "~2.3.2"
 
