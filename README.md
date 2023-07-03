@@ -51,12 +51,7 @@ const normalizePath = (path: string) => {
 };
 
 const AppRoot = () => (
-  <MetricsProvider
-    appName="my-app-name"
-    owner="my-team"
-    getNormalizedPath={normalizePath}
-    metricsAggregatorUrl="https://some-metrics-aggregator.com/push-metrics"
-  >
+  <MetricsProvider appName="my-app-name" owner="my-team" getNormalizedPath={normalizePath} metricsAggregatorUrl="https://some-metrics-aggregator.com/push-metrics">
     <OtherProviders>
       <App />
     </OtherProviders>
@@ -256,12 +251,7 @@ component tree and all metric observations will be shown in the console.
 
 ```tsx
 const AppRoot = () => (
-  <MetricsProvider
-    appName="my-app-name"
-    owner="my-team"
-    getNormalizedPath={normalizePath}
-    metricsAggregatorUrl="https://some-metrics-aggregator.com/push-metrics"
-  >
+  <MetricsProvider appName="my-app-name" owner="my-team" getNormalizedPath={normalizePath} metricsAggregatorUrl="https://some-metrics-aggregator.com/push-metrics">
     <MetricsLogger />
     <MyApp />
   </MetricsProvider>
@@ -279,12 +269,7 @@ const metricsLogger = ({ metricName, value, tags }) => {
   console.debug('Custom log for prom-react!', metricName, value, tags);
 };
 const AppRoot = () => (
-  <MetricsProvider
-    appName="my-app-name"
-    owner="my-team"
-    getNormalizedPath={normalizePath}
-    metricsAggregatorUrl="https://some-metrics-aggregator.com/push-metrics"
-  >
+  <MetricsProvider appName="my-app-name" owner="my-team" getNormalizedPath={normalizePath} metricsAggregatorUrl="https://some-metrics-aggregator.com/push-metrics">
     <MetricsLogger logger={metricsLogger} />
     <MyApp />
   </MetricsProvider>
@@ -297,15 +282,8 @@ every section change).
 
 ```tsx
 const AppRoot = () => (
-  <MetricsProvider
-    appName="my-app-name"
-    owner="my-team"
-    getNormalizedPath={normalizePath}
-    metricsAggregatorUrl="https://some-metrics-aggregator.com/push-metrics"
-  >
-    {process.env.NODE_ENV !== 'production' && (
-      <MetricsDebugOverlay withLogger onClose={closeOverlay} />
-    )}
+  <MetricsProvider appName="my-app-name" owner="my-team" getNormalizedPath={normalizePath} metricsAggregatorUrl="https://some-metrics-aggregator.com/push-metrics">
+    {process.env.NODE_ENV !== 'production' && <MetricsDebugOverlay withLogger onClose={closeOverlay} />}
     <MyApp />
   </MetricsProvider>
 );
@@ -395,12 +373,7 @@ const gatewayFetchOptions = {
 };
 
 const AppRoot = () => (
-  <MetricsProvider
-    appName="my-app-name"
-    owner="my-team"
-    fetchOptions={gatewayFetchOptions}
-    metricsAggregatorUrl="https://some-metrics-aggregator.com/push-metrics"
-  >
+  <MetricsProvider appName="my-app-name" owner="my-team" fetchOptions={gatewayFetchOptions} metricsAggregatorUrl="https://some-metrics-aggregator.com/push-metrics">
     <App />
   </MetricsProvider>
 );
