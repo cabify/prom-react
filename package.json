@@ -35,7 +35,7 @@
     "react-beforeunload": "^2.6.0"
   },
   "devDependencies": {
-    "@cabify/babel-preset": "0.1.1",
+    "@cabify/babel-preset": "0.1.2",
     "@cabify/eslint-config": "2.0.0",
     "@cabify/package-build": "0.1.2",
     "@testing-library/jest-dom": "5.16.5",
