@@ -45,7 +45,7 @@
     "@types/react": "18.2.14",
     "@types/react-beforeunload": "2.1.1",
     "@types/react-dom": "18.2.6",
-    "all-contributors-cli": "6.24.0",
+    "all-contributors-cli": "6.26.0",
     "cross-env": "7.0.3",
     "eslint": "8.43.0",
     "eslint-import-resolver-typescript": "3.5.5",
