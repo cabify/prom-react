@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@cabify/babel-preset": "0.1.2",
-    "@cabify/eslint-config": "2.0.0",
+    "@cabify/eslint-config": "2.0.1",
     "@cabify/package-build": "0.1.2",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "14.0.0",
@@ -51,7 +51,7 @@
     "jest": "29.6.1",
     "jest-environment-jsdom": "29.6.1",
     "msw": "1.2.2",
-    "prettier": "2.8.8",
+    "prettier": "3.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rimraf": "5.0.1",
