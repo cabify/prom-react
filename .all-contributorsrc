@@ -3,9 +3,7 @@
   "projectOwner": "cabify",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "files": [
-    "README.md"
-  ],
+  "files": ["README.md"],
   "imageSize": 100,
   "commit": true,
   "commitConvention": "none",
@@ -15,99 +13,77 @@
       "name": "Javier López",
       "avatar_url": "https://avatars.githubusercontent.com/u/259623?v=4",
       "profile": "https://github.com/jalopez",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "alejandrofdiaz",
       "name": "Alejandro",
       "avatar_url": "https://avatars.githubusercontent.com/u/9197247?v=4",
       "profile": "https://github.com/alejandrofdiaz",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "valenber",
       "name": "Valentin Berlin",
       "avatar_url": "https://avatars.githubusercontent.com/u/7880641?v=4",
       "profile": "https://valya.codes/",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "alexgallardo",
       "name": "Alejandro Gallardo Escobar",
       "avatar_url": "https://avatars.githubusercontent.com/u/7766614?v=4",
       "profile": "https://github.com/alexgallardo",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "christiandebarrio",
       "name": "Christian",
       "avatar_url": "https://avatars.githubusercontent.com/u/13832650?v=4",
       "profile": "https://github.com/christiandebarrio",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "riboher",
       "name": "Ricardo Boluda",
       "avatar_url": "https://avatars.githubusercontent.com/u/11684090?v=4",
       "profile": "https://github.com/riboher",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "pablomarquezcabify",
       "name": "Pablo Márquez",
       "avatar_url": "https://avatars.githubusercontent.com/u/99354964?v=4",
       "profile": "https://github.com/pablomarquezcabify",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "leireriel",
       "name": "Leire Rico",
       "avatar_url": "https://avatars.githubusercontent.com/u/48056077?v=4",
       "profile": "https://leireriel.github.io/leire-rico-portfolio/#/",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "area73",
       "name": "Rodrigo",
       "avatar_url": "https://avatars.githubusercontent.com/u/2030605?v=4",
       "profile": "http://www.siete3.com/",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "AlexTemina",
       "name": "Alex Temina",
       "avatar_url": "https://avatars.githubusercontent.com/u/14157093?v=4",
       "profile": "https://github.com/AlexTemina",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     },
     {
       "login": "fernandezAmor",
       "name": "fernandezAmor",
       "avatar_url": "https://avatars.githubusercontent.com/u/6586552?v=4",
       "profile": "https://github.com/fernandezAmor",
-      "contributions": [
-        "code"
-      ]
+      "contributions": ["code"]
     }
   ],
   "contributorsPerLine": 7
