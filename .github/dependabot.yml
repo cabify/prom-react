@@ -10,3 +10,7 @@ updates:
     schedule:
       interval: 'weekly'
     versioning-strategy: increase
+    groups:
+      testing-library:
+        patterns:
+          - '@testing-library/*'
