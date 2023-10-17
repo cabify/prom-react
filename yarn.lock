@@ -1825,10 +1825,10 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
   integrity sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
 
-"@types/react-beforeunload@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@types/react-beforeunload/-/react-beforeunload-2.1.1.tgz#ee77c0843a588c13df4a5a4eebe48b23b361e1d5"
-  integrity sha512-KER+M11lrXhp++tHDm9P7YWaKKBWwNyZkwnHSV3QQXGU2ZcP9x+O0Y7ZDZqGQD1OlGF4P8fmcpll3ol3a8KXsQ==
+"@types/react-beforeunload@2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@types/react-beforeunload/-/react-beforeunload-2.1.2.tgz#815708e5cef43f45347d377f5e94d72e32dc2cf5"
+  integrity sha512-PrM0A9ZyQIoEx/vJ54yqePiAoN38KOw30yYVVVH/mA/WJXkhf1mTuNWlzDv8HTEXxM6jbcvsCf/5j5bRRNdMlw==
   dependencies:
     "@types/react" "*"
 
