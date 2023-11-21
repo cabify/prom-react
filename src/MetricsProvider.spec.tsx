@@ -1,6 +1,5 @@
 import { Stage, usePerformanceMark } from '@shopify/react-performance';
 import { render, screen } from '@testing-library/react';
-import { Metric } from 'promjs';
 import { useEffect } from 'react';
 import { Mock } from 'vitest';
 
@@ -8,6 +7,7 @@ import { hasAnyRequest, waitForRequests } from '../test/mockServer';
 import { GoldenMetrics, MetricDefinition } from './createMetrics';
 import { useMetrics } from './MetricsContext';
 import { MetricsProvider } from './MetricsProvider';
+import { Metric } from './promjs';
 
 const LoadMetricChecker = ({
   onLoad,

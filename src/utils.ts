@@ -1,4 +1,4 @@
-import { Registry } from 'promjs/registry';
+import { Registry } from './promjs/registry';
 
 export const sendMetricsToGateway = async (
   registry: Registry,

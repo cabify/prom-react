@@ -3,7 +3,6 @@ import {
   useNavigationListener,
 } from '@shopify/react-performance';
 import EventEmitter from 'events';
-import prom from 'promjs';
 import {
   PropsWithChildren,
   useCallback,
@@ -21,6 +20,7 @@ import {
   MetricDefinition,
 } from './createMetrics';
 import { MetricsContext, NavigationData } from './MetricsContext';
+import { createRegistry } from './promjs';
 import { addToMetrics, sendMetricsToGateway } from './utils';
 
 export interface MetricsProviderProps {
@@ -106,7 +106,7 @@ const MetricsProvider = ({
     null,
   );
 
-  const registry = useRef(prom());
+  const registry = useRef(createRegistry());
   const eventEmitter = useRef(new EventEmitter());
 
   const defaultTags = useMemo(

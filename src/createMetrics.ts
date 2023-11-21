@@ -1,4 +1,4 @@
-import { Registry } from 'promjs/registry';
+import { Registry } from './promjs/registry';
 
 export enum GoldenMetrics {
   AppLoaded = 'prom_react_app_loaded',

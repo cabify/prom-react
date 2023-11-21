@@ -1,5 +1,6 @@
-import { Registry } from 'promjs/registry';
 import { createContext, useContext } from 'react';
+
+import { Registry } from './promjs/registry';
 
 export interface NavigationData {
   start: number;
