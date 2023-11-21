@@ -1,32 +1,29 @@
 {
   "compilerOptions": {
-    "lib": ["es2016", "dom"],
-    "outDir": "dist",
-    "target": "esNext",
-    "module": "esNext",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["src/*"]
-    },
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
-    "allowJs": false,
     "checkJs": false,
     "skipLibCheck": true,
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
+    "strict": true,
     "noUnusedLocals": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "declaration": true,
-    "resolveJsonModule": true
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "typeRoots": ["@types", "node_modules/@types"],
+    "types": ["vitest/globals"],
+
+    "outDir": "dist",
+    "module": "esNext",
+    "target": "es5",
+    "lib": ["es2016", "dom"],
+    "declaration": true
   },
-  "include": ["src", "external.d.ts"],
-  "exclude": ["dist", "es2015", "node_modules", "**/*.spec.*"]
+  "exclude": ["node_modules", "build", "dist"]
 }

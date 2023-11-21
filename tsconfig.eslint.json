@@ -1,8 +1,0 @@
-{
-  "extends": "./tsconfig",
-  "compilerOptions": {
-    "noEmit": true
-  },
-  "include": ["src", "test", "external.d.ts"],
-  "exclude": ["dist", "es2015", "node_modules"]
-}

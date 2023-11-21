@@ -1,15 +1,14 @@
-import { matchRequestUrl, MockedRequest, rest } from 'msw';
+import { delay, http, HttpResponse, matchRequestUrl } from 'msw';
 import { setupServer } from 'msw/node';
 
 export const server = setupServer(
-  rest.post(
-    'http://push-aggregation-gateway/push-metrics',
-    (_req, res, ctx) => {
-      return res(ctx.delay(), ctx.status(200));
-    },
-  ),
-  rest.post('http://push-aggregation-gateway/server-down', (_req, res, ctx) => {
-    return res(ctx.delay(), ctx.status(503));
+  http.post('http://push-aggregation-gateway/push-metrics', async () => {
+    await delay();
+    return new HttpResponse(null, { status: 200 });
+  }),
+  http.post('http://push-aggregation-gateway/server-down', async () => {
+    await delay();
+    return new HttpResponse(null, { status: 503 });
   }),
 );
 
@@ -19,32 +18,37 @@ export const waitForRequests = async (
   expectedRequests = 1,
 ) => {
   const requestIds: string[] = [];
-  const requests: MockedRequest[] = [];
+  const requests: Request[] = [];
 
-  return new Promise<MockedRequest[]>((resolve, reject) => {
-    server.events.on('request:start', (req) => {
-      const matchesMethod = req.method.toLowerCase() === method.toLowerCase();
+  return new Promise<Request[]>((resolve, reject) => {
+    server.events.on('request:start', ({ request, requestId }) => {
+      const matchesMethod =
+        request.method.toLowerCase() === method.toLowerCase();
 
-      const matchesUrl = matchRequestUrl(req.url, url);
+      const matchesUrl = matchRequestUrl(new URL(request.url), url);
 
       if (matchesMethod && matchesUrl) {
-        requestIds.push(req.id);
+        requestIds.push(requestId);
       }
     });
 
-    server.events.on('request:match', (req) => {
-      if (requestIds.includes(req.id)) {
-        requests.push(req);
+    server.events.on('request:match', ({ request, requestId }) => {
+      if (requestIds.includes(requestId)) {
+        requests.push(request);
         if (requests.length === expectedRequests) {
           resolve(requests);
         }
       }
     });
 
-    server.events.on('request:unhandled', (req) => {
-      if (requestIds.includes(req.id)) {
+    server.events.on('request:unhandled', ({ request, requestId }) => {
+      if (requestIds.includes(requestId)) {
         reject(
-          new Error(`The ${req.method} ${req.url.href} request was unhandled.`),
+          new Error(
+            `The ${request.method} ${
+              new URL(request.url).href
+            } request was unhandled.`,
+          ),
         );
       }
     });

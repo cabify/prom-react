@@ -1,8 +1,8 @@
 import { Stage, usePerformanceMark } from '@shopify/react-performance';
 import { render, screen } from '@testing-library/react';
-import { MockedRequest } from 'msw';
 import { Metric } from 'promjs';
 import { useEffect } from 'react';
+import { Mock } from 'vitest';
 
 import { hasAnyRequest, waitForRequests } from '../test/mockServer';
 import { GoldenMetrics, MetricDefinition } from './createMetrics';
@@ -43,13 +43,13 @@ const TestSection = () => {
 };
 
 describe('<MetricsProvider />', () => {
-  let requestsPromise: Promise<MockedRequest[]>;
-  let requests: MockedRequest[];
+  let requestsPromise: Promise<Request[]>;
+  let requests: Request[];
 
   describe('default behavior', () => {
-    let getNormalizedPath: jest.Mock;
+    let getNormalizedPath: Mock;
     beforeEach(async () => {
-      getNormalizedPath = jest.fn(() => '/normalized');
+      getNormalizedPath = vi.fn(() => '/normalized');
       requestsPromise = waitForRequests(
         'POST',
         'http://push-aggregation-gateway/push-metrics',
@@ -126,10 +126,10 @@ describe('<MetricsProvider />', () => {
 
   describe('when no aggregator url is provided', () => {
     let anyRequest: Promise<boolean>;
-    let onLoad: jest.Mock;
+    let onLoad: Mock;
     beforeEach(() => {
       anyRequest = hasAnyRequest();
-      onLoad = jest.fn();
+      onLoad = vi.fn();
       render(
         <MetricsProvider appName="test-app" owner="team">
           <LoadMetricChecker onLoad={onLoad} />
@@ -161,14 +161,14 @@ describe('<MetricsProvider />', () => {
   });
 
   describe('when no aggregator server is down', () => {
-    let onLoad: jest.Mock;
+    let onLoad: Mock;
     beforeEach(async () => {
       requestsPromise = waitForRequests(
         'POST',
         'http://push-aggregation-gateway/push-metrics',
         2,
       );
-      onLoad = jest.fn();
+      onLoad = vi.fn();
       render(
         <MetricsProvider
           appName="test-app"
