@@ -4,7 +4,7 @@ import {
   MetricsProvider,
   useMetrics,
   usePerformanceMark,
-} from './index';
+} from '.';
 
 describe('index', () => {
   it('should export a provider', () => {

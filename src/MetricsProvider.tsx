@@ -13,14 +13,17 @@ import {
 } from 'react';
 import { useBeforeunload } from 'react-beforeunload';
 
-import { ObserveCallback } from '.';
 import {
   createMetrics,
   GoldenMetrics,
   MetricDefinition,
 } from './createMetrics';
-import { MetricsContext, NavigationData } from './MetricsContext';
-import { createRegistry } from './promjs';
+import {
+  MetricsContext,
+  NavigationData,
+  ObserveCallback,
+} from './MetricsContext';
+import { Registry } from './promjs/registry';
 import { addToMetrics, sendMetricsToGateway } from './utils';
 
 export interface MetricsProviderProps {
@@ -106,7 +109,7 @@ const MetricsProvider = ({
     null,
   );
 
-  const registry = useRef(createRegistry());
+  const registry = useRef(new Registry());
   const eventEmitter = useRef(new EventEmitter());
 
   const defaultTags = useMemo(

@@ -7,7 +7,7 @@ import { hasAnyRequest, server, waitForRequests } from '../test/mockServer';
 import { GoldenMetrics, MetricDefinition } from './createMetrics';
 import { useMetrics } from './MetricsContext';
 import { MetricsProvider } from './MetricsProvider';
-import { Metric } from './promjs';
+import { Metric } from './promjs/types';
 
 beforeAll(() => {
   server.listen({ onUnhandledRequest: 'error' });
