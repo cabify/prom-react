@@ -10,8 +10,10 @@ export const sendMetricsToGateway = async (
   if (metrics.length > 0) {
     const keepalive = isAppUnloading ? { keepalive: true } : {};
 
+    const url = new URL(promGatewayUrl);
+
     try {
-      await fetch(promGatewayUrl, {
+      await fetch(url, {
         body: metrics,
         method: 'POST',
         ...keepalive,
