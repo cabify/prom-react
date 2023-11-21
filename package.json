@@ -25,7 +25,7 @@
     "publish:canary": "npm version prerelease --preid=beta",
     "test": "vitest",
     "test:ci": "vitest",
-    "typecheck": "tsc --project tsconfig.eslint.json"
+    "typecheck": "tsc --project tsconfig.json"
   },
   "dependencies": {
     "@shopify/network": "^3.0.0",
@@ -55,8 +55,7 @@
     "rimraf": "5.0.5",
     "typescript": "5.2.2",
     "vite-tsconfig-paths": "4.2.1",
-    "vitest": "0.34.6",
-    "whatwg-fetch": "3.6.19"
+    "vitest": "0.34.6"
   },
   "publishConfig": {
     "access": "public"
