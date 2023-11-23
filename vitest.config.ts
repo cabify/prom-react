@@ -1,8 +1,8 @@
-/* eslint-disable import/no-default-export */
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable spaced-comment */
 /// <reference types="vitest" />
 /// <reference types="vite/client" />
+
+/* eslint-disable import/no-default-export */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
