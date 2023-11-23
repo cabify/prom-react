@@ -16,7 +16,7 @@
     "baseUrl": "./",
     "resolveJsonModule": true,
     "allowJs": true,
-    "types": ["vitest/globals"],
+    "typeRoots": ["@types", "node_modules/@types"],
     "outDir": "dist",
     "module": "esNext",
     "target": "es5",
