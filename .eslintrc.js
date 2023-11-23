@@ -11,4 +11,5 @@ module.exports = {
       typescript: {},
     },
   },
+  rules: { 'spaced-comment': 'off' },
 };
