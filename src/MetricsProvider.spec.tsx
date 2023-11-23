@@ -1,7 +1,7 @@
 import { Stage, usePerformanceMark } from '@shopify/react-performance';
 import { render, screen } from '@testing-library/react';
 import { useEffect } from 'react';
-import { afterAll, afterEach, beforeAll, Mock } from 'vitest';
+import { Mock } from 'vitest';
 
 import { hasAnyRequest, server, waitForRequests } from '../test/mockServer';
 import { GoldenMetrics, MetricDefinition } from './createMetrics';
