@@ -10,10 +10,10 @@ import { formatCounterOrGauge, formatHistogramOrSummary } from './utils';
 type CollectorForType<Type extends CollectorType> = Type extends 'histogram'
   ? Histogram
   : Type extends 'gauge'
-  ? Gauge
-  : Type extends 'counter'
-  ? Counter
-  : never;
+    ? Gauge
+    : Type extends 'counter'
+      ? Counter
+      : never;
 
 interface RegistryItem<Type extends CollectorType> {
   [key: string]: {
