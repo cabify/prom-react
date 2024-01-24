@@ -6,7 +6,7 @@
     "module": "esNext",
     "baseUrl": ".",
     "paths": {
-      "*": ["src/*"]
+      "*": ["src/*"],
     },
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -25,8 +25,8 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "declaration": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
   },
   "include": ["src", "external.d.ts"],
-  "exclude": ["dist", "es2015", "node_modules", "**/*.spec.*"]
+  "exclude": ["dist", "es2015", "node_modules", "**/*.spec.*"],
 }
