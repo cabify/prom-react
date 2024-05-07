@@ -1704,10 +1704,10 @@
   dependencies:
     web-vitals "^3.0.4"
 
-"@shopify/react-performance@^4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@shopify/react-performance/-/react-performance-4.0.2.tgz#e1959f10c40c96f9697b1bb4a387c15c80d96370"
-  integrity sha512-DfL3aYQbK+2C31fMyIJKtqXsbvasGAUUwYiL9j0a2pdAYgldhNHc1fDD86z/B3YTKr4YGAD+KHv5g1Jci51ODA==
+"@shopify/react-performance@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@shopify/react-performance/-/react-performance-4.0.3.tgz#0e5fb94e34d48d684f38a92cc3e55abe69d06428"
+  integrity sha512-vbKqaWodWQ703tacc7p/AGp3PuFRtKEf72nicqY6g2Plwql9aplGjiY/ddstEgLu0ciSdaVqNwRU+XVUy7Hd6Q==
   dependencies:
     "@shopify/performance" "^4.2.0"
 
