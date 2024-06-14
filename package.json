@@ -30,7 +30,6 @@
   "dependencies": {
     "@shopify/network": "^3.0.0",
     "@shopify/react-performance": "^4.0.3",
-    "@testing-library/dom": "^10.1.0",
     "events": "^3.3.0",
     "promjs": "^0.4.1",
     "react-beforeunload": "^2.6.0"
@@ -39,13 +38,14 @@
     "@cabify/babel-preset": "0.1.2",
     "@cabify/eslint-config": "2.0.1",
     "@cabify/package-build": "0.1.2",
+    "@testing-library/dom": "10.1.0",
     "@testing-library/jest-dom": "6.4.5",
     "@testing-library/react": "16.0.0",
     "@testing-library/user-event": "14.5.2",
     "@types/jest": "29.5.12",
     "@types/react": "18.3.3",
     "@types/react-beforeunload": "2.1.5",
-    "@types/react-dom": "^18.3.0",
+    "@types/react-dom": "18.3.0",
     "cross-env": "7.0.3",
     "eslint": "8.57.0",
     "eslint-import-resolver-typescript": "3.6.1",
