@@ -28,7 +28,7 @@
     "typecheck": "tsc --project tsconfig.eslint.json"
   },
   "dependencies": {
-    "@shopify/network": "^3.0.0",
+    "@shopify/network": "^3.3.0",
     "@shopify/react-performance": "^4.0.3",
     "events": "^3.3.0",
     "promjs": "^0.4.1",
