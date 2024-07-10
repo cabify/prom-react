@@ -2,6 +2,7 @@ import {
   useLifecycleEventListener,
   useNavigationListener,
 } from '@shopify/react-performance';
+// eslint-disable-next-line @typescript-eslint/naming-convention
 import EventEmitter from 'events';
 import prom from 'promjs';
 import {
