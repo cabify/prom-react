@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@cabify/babel-preset": "0.1.2",
-    "@cabify/eslint-config": "2.0.1",
+    "@cabify/eslint-config": "2.1.1",
     "@cabify/package-build": "0.1.2",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.4.8",
