@@ -1,15 +1,16 @@
-import { matchRequestUrl, MockedRequest, rest } from 'msw';
+import { delay, http, HttpResponse, matchRequestUrl, MockedRequest } from 'msw';
 import { setupServer } from 'msw/node';
 
 export const server = setupServer(
-  rest.post(
-    'http://push-aggregation-gateway/push-metrics',
-    (_req, res, ctx) => {
-      return res(ctx.delay(), ctx.status(200));
-    },
-  ),
-  rest.post('http://push-aggregation-gateway/server-down', (_req, res, ctx) => {
-    return res(ctx.delay(), ctx.status(503));
+  http.post('http://push-aggregation-gateway/push-metrics', async () => {
+    await delay(1);
+    return new HttpResponse(null, { status: 200 });
+    // return res(ctx.delay(), ctx.status(200));
+  }),
+  http.post('http://push-aggregation-gateway/server-down', async () => {
+    await delay(1);
+    return new HttpResponse(null, { status: 503 });
+    // return res(ctx.delay(), ctx.status(503));
   }),
 );
 
@@ -19,7 +20,7 @@ export const waitForRequests = async (
   expectedRequests = 1,
 ) => {
   const requestIds: string[] = [];
-  const requests: MockedRequest[] = [];
+  const requests = [];
 
   return new Promise<MockedRequest[]>((resolve, reject) => {
     server.events.on('request:start', (req) => {
