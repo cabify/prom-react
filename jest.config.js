@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   rootDir: path.resolve('./'),
-  testEnvironment: 'jest-environment-jsdom',
+  testEnvironment: 'jest-fixed-jsdom',
   testEnvironmentOptions: {
     url: 'http://localhost/',
   },
