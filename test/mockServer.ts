@@ -31,7 +31,7 @@ export const waitForRequests = async (
 
       const matchesUrl = matchRequestUrl(new URL(request.url), url);
 
-      if (matchesMethod && matchesUrl) {
+      if (matchesMethod && matchesUrl.matches) {
         requestIds.push(requestId);
       }
     });
