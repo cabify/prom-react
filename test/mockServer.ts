@@ -11,7 +11,7 @@ export const server = setupServer(
   http.post('http://push-aggregation-gateway/server-down', async () => {
     await delay();
     return new HttpResponse(null, {
-      status: 500,
+      status: 503,
     });
   }),
 );
