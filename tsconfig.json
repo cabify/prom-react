@@ -1,13 +1,10 @@
 {
   "compilerOptions": {
     "lib": ["es2016", "dom"],
+    "rootDir": "src",
     "outDir": "dist",
     "target": "esNext",
     "module": "esNext",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["src/*"]
-    },
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
@@ -15,7 +12,7 @@
     "checkJs": false,
     "skipLibCheck": true,
     "jsx": "react-jsx",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
