@@ -6,8 +6,16 @@ on:
 
 jobs:
   publish-npm:
-    uses: cabify/javascript-actions/.github/workflows/npm_publish.yml@main
-    with:
-      tag: ${{ contains(github.ref_name,'beta') && 'beta' || 'latest' }}
-    secrets:
-      token: ${{ secrets.NPM_TOKEN }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+      - run: yarn install
+      - run: yarn build
+      - run: npm publish --provenance --tag ${{ contains(github.ref_name,'beta') && 'beta' || 'latest' }}
